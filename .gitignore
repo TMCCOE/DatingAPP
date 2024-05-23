@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DatingApp/API/bin/Debug/net8.0
+/DatingApp/.vs/DatingApp/DesignTimeBuild
+/DatingApp/.vs/DatingApp/FileContentIndex
+/DatingApp/.vs/DatingApp/v17
+/DatingApp/.vs/ProjectEvaluation
+/DatingApp/API/obj
+/DatingApp/.vs/DatingApp/config
+/DatingApp/DatingApp.Data/bin/Debug/net8.0
+/DatingApp/DatingApp.Data/obj
+/DatingApp/DatingAPP.Domain/bin/Debug/net8.0
+/DatingApp/DatingAPP.Domain/obj/Debug/net8.0
+/DatingApp/DationgAppServices/bin/Debug/net8.0
+/DatingApp/DatingAPP.Domain/obj
+/DatingApp/DationgAppServices/obj
