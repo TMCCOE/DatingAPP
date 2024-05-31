@@ -22,6 +22,7 @@ namespace API
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
             services.ConfigureDbContexts(_configuration);
+            services.AddCors();
 
             this.HttpContextAccessor = httpContextAccessor;
             services.ConfigureCustomServices(HttpContextAccessor, _configuration);
@@ -42,7 +43,7 @@ namespace API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
             app.UseHttpsRedirection();
             app.UseAuthorization();
 

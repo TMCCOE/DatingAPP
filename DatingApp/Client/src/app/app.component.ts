@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Client';
+  title = 'Users';
   userData: any;
   constructor(private httpClient: HttpClient) {
   }
 
   ngOnInit(): void {
-    this.httpClient.get(``).subscribe({
+    this.httpClient.get(`https://localhost:44311/api/users/all`).subscribe({
       next:response => this.userData = response
     })
   }
